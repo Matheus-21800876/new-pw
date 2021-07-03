@@ -69,21 +69,21 @@ function templatePaleta(paleta) {
                             <text x="180" y="195" fill="#fff">${paleta.color04}</text>
                         </g>
                     </svg>
-                    <a href="#" onclick="paginaPaleta('${paleta.name}','${paleta.color01}','${paleta.color02}','${paleta.color03}','${paleta.color04}')" class="palette-name">${paleta.name}</a>
-                    <p class="palette-author">Cristopher</p>
+                    <a href="#" onclick="paginaPaleta('${paleta.name}','${paleta.autor}','${paleta.color01}','${paleta.color02}','${paleta.color03}','${paleta.color04}')" class="palette-name">${paleta.name}</a>
+                    <p class="palette-author">${paleta.autor}</p>
                 </article>
             </section>         
                 `;
 }
 
-function paginaPaleta(name, color01, color02, color03, color04) {
+function paginaPaleta(name, autor, color01, color02, color03, color04) {
 
     document.querySelector('#content').innerHTML =
         `
             <section id="palette-info">
 
-            <h2>${name}</h2>
-            <h3>Criada por Cristopher</h3>
+                <h2>${name}</h2>
+                <h3>Criada por ${autor}</h3>
 
                 <section id="color-itens">
                     <article class="color-item">

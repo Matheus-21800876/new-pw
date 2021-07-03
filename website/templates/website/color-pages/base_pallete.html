@@ -13,6 +13,7 @@
 
     {% load static %}
     <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+    <script src="{% static 'website/js/script.js' %}"></script>
 
     {% block title %}
     {% endblock %}
@@ -33,6 +34,7 @@
                 <li><a class="nav-link" href="../comentarios.html">Comentários</a></li>
             </ul>
         </nav>
+        <button onclick="toggle()">Dark mode</button>
     </header>
 
     <main>

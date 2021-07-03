@@ -22,6 +22,7 @@ def index(request):
 colorPalettes = [
     {
         "name": "Paleta - 0001",
+        "autor": "Cristopher",
         "color01": "#EEEBDD",
         "color02": "#811515",
         "color03": "#630000",
@@ -29,6 +30,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0002",
+        "autor": "Mike",
         "color01": "#151515",
         "color02": "#301B3F",
         "color03": "#3C415C",
@@ -36,6 +38,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0003",
+        "autor": "Jason",
         "color01": "#8C0000",
         "color02": "#BD2000",
         "color03": "#FA1E0E",
@@ -43,6 +46,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0004",
+        "autor": "Trevor",
         "color01": "#C5D7BD",
         "color02": "#9FB8AD",
         "color03": "#383E56",
@@ -50,6 +54,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0005",
+        "autor": "Maria",
         "color01": "#E3FDFD",
         "color02": "#CBF1F5",
         "color03": "#A6E3E9",
@@ -57,6 +62,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0006",
+        "autor": "Trevor",
         "color01": "#2B2E4A",
         "color02": "#E84545",
         "color03": "#903749",
@@ -64,6 +70,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0007",
+        "autor": "Jon",
         "color01": "#212121",
         "color02": "#323232",
         "color03": "#0D7377",
@@ -71,6 +78,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0008",
+        "autor": "Dave",
         "color01": "#6FE7DD",
         "color02": "#3490DE",
         "color03": "#6639A6",
@@ -78,6 +86,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0009",
+        "autor": "Liana",
         "color01": "#3EC1D3",
         "color02": "#F6F7D7",
         "color03": "#FF9A00",
@@ -85,6 +94,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0010",
+        "autor": "Max",
         "color01": "#233142",
         "color02": "#455D7A",
         "color03": "#F95959",
@@ -92,6 +102,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0011",
+        "autor": "Alex",
         "color01": "#303841",
         "color02": "#3A4750",
         "color03": "#D72323",
@@ -99,6 +110,7 @@ colorPalettes = [
     },
     {
         "name": "Paleta - 0012",
+        "autor": "Lucas",
         "color01": "#F3F4ED",
         "color02": "#536162",
         "color03": "#424642",
@@ -118,8 +130,8 @@ def section(request, num):
 '''END'''
 
 
-def home_page_view(request):
-    return render(request, 'website/index.html')
+'''def home_page_view(request):
+    return render(request, 'website/index.html')'''
 
 
 def teoria_page_view(request):
@@ -236,41 +248,41 @@ def color_page_002(request):
     return render(request, 'website/color-pages/color-page-002.html')
 
 
-def color_page_003(request):
-    return render(request, 'website/color-pages/color-page-003.html')
+'''def color_page_003(request):
+    return render(request, 'website/color-pages/color-page-003.html')'''
 
 
 def color_page_004(request):
     return render(request, 'website/color-pages/color-page-004.html')
 
 
-def color_page_005(request):
-    return render(request, 'website/color-pages/color-page-005.html')
+'''def color_page_005(request):
+    return render(request, 'website/color-pages/color-page-005.html')'''
 
 
-def color_page_006(request):
-    return render(request, 'website/color-pages/color-page-006.html')
+'''def color_page_006(request):
+    return render(request, 'website/color-pages/color-page-006.html')'''
 
 
-def color_page_007(request):
-    return render(request, 'website/color-pages/color-page-007.html')
+'''def color_page_007(request):
+    return render(request, 'website/color-pages/color-page-007.html')'''
 
 
 def color_page_008(request):
     return render(request, 'website/color-pages/color-page-008.html')
 
 
-def color_page_009(request):
-    return render(request, 'website/color-pages/color-page-009.html')
+'''def color_page_009(request):
+    return render(request, 'website/color-pages/color-page-009.html')'''
 
 
 def color_page_010(request):
     return render(request, 'website/color-pages/color-page-010.html')
 
 
-def color_page_011(request):
-    return render(request, 'website/color-pages/color-page-011.html')
+'''def color_page_011(request):
+    return render(request, 'website/color-pages/color-page-011.html')'''
 
 
-def color_page_012(request):
-    return render(request, 'website/color-pages/color-page-012.html')
+'''def color_page_012(request):
+    return render(request, 'website/color-pages/color-page-012.html')'''

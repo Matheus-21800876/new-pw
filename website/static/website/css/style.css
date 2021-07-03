@@ -140,9 +140,9 @@ footer > p {
 /* Main */
 
 
-#palette-section {
+#content{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .small-palette-box {
@@ -305,7 +305,7 @@ footer > p {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    box-shadow: #888 0px 0px 15px;
+    box-shadow: 0px 0px 15px var(--terciary);
 }
 
 .color-item > svg {
@@ -864,4 +864,8 @@ td, th {
 
 ::marker{
     color: rgba(0,0,0,0);
+}
+
+#palette-info{
+    color: var(--quartenary);
 }
