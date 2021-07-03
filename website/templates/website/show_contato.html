@@ -1,0 +1,20 @@
+{% extends 'website/base.html' %}
+
+{% block main %}
+    {% for contato in contatos %}
+        <p>
+            <span class="info">
+                {{ contato.nome }}
+                {{ contato.apelido }}
+                {{ contato.telefone }}
+                {{ contato.email }}
+                {{ contato.data_de_nascimento }}
+            </span>
+
+            <a href="{% url 'website:edita_contato' contato.id %}" class="btn btn-warning  btn-sm">
+                Editar
+            </a>
+        </p>
+    {% endfor %}
+    <a href="{% url 'website:index' %}">Logout</a>
+{% endblock %}

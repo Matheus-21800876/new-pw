@@ -1,0 +1,30 @@
+{% extends 'website/base.html' %}
+
+{% block link %}
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/website/images/color_form.ico">
+{% endblock %}
+
+{% block title %}
+    <title>Quizz</title>
+{% endblock %}
+
+{% block li %}
+    <li><a class="nav-link" href="./">Home</a></li>
+    <li><a class="nav-link" href="./form.html">Criar</a></li>
+    <li><a class="nav-link active" href="./quizz.html">Quizz</a></li>
+{% endblock %}
+
+{% block main %}
+    <section id="intro-quizz">
+        <h2>Quizz</h2>
+        <p>Nesta secção pode testar seu conhecimento relativo a cores e paletas.</p>
+    </section>
+
+    <form id="quizz-form" action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <input type="submit" value="Submit" class="btn btn-success" >
+    </form>
+
+{% endblock %}

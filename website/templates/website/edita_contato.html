@@ -1,0 +1,14 @@
+{% extends 'website/base.html' %}
+
+{% block main %}
+<h3>Contato</h3>
+    <form action="{% url 'website:edita_contato' contato_id %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <a href="{% url 'website:contatos' %}" role="button" class="btn btn-warning">Cancelar</a>
+        <input type="submit" value="Gravar" class="btn btn-success" >
+        <a href="{% url 'website:apaga_contato' contato_id %}" role="button" class="btn btn-danger">Apagar</a>
+    </form>
+
+{% endblock %}

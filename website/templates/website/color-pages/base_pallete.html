@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../static/website/images/palette_icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+    {% block title %}
+    {% endblock %}
+
+</head>
+
+<body class="grid-layout-01">
+    <header>
+        <a class="nav-link" href="../"><h1>Color Palettes</h1></a>
+        <nav id="navbar">
+            <ul>
+                <li><a class="nav-link" href="../">Home</a></li>
+                <li><a class="nav-link" href="../form.html">Criar</a></li>
+                <li><a class="nav-link" href="../quizz.html">Quizz</a></li>
+                <li><a class="nav-link" href="../about_colors.html">Teoria</a></li>
+                <li><a class="nav-link" href="../about_site.html">Sobre</a></li>
+                <li><a class="nav-link" href="../contatos.html">Contatos</a></li>
+                <li><a class="nav-link" href="../comentarios.html">Comentários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+
+    <aside id="index-aside">
+        <section class="aside-index-elements" id="palette-rank">
+            <h2>Top 5 Paletas <i class="fas fa-trophy"></i></h2>
+            <a href="./color-page-002.html">Paleta - 0002</a>
+            <a href="./color-page-004.html">Paleta - 0004</a>
+            <a href="./color-page-001.html">Paleta - 0001</a>
+            <a href="./color-page-010.html">Paleta - 0010</a>
+            <a href="./color-page-008.html">Paleta - 0008</a>
+        </section>
+
+        <section class="aside-index-elements" id="palette-categories">
+            <h2>Categorias</h2>
+            <a href="#">Darkmode</a>
+            <a href="#">Lightmode</a>
+            <a href="#">Flat Colors</a>
+            <a href="#">Hot Colors</a>
+            <a href="#">Cold Colors</a>
+            <a href="#">Spring Colors</a>
+            <a href="#">Summer Colors</a>
+            <a href="#">Fall Colors</a>
+            <a href="#">Winter Colors</a>
+        </section>
+    </aside>
+
+    <footer>
+        <p>Projeto de Programação Web 2021</p>
+    </footer>
+</body>
+
+</html>

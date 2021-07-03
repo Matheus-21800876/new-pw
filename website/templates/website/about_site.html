@@ -1,0 +1,133 @@
+{% extends 'website/base2.html' %}
+
+{% block link %}
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/website/images/about.ico">
+{% endblock %}
+
+{% block title %}
+    <title>Sobre o Site</title>
+{% endblock %}
+
+{% block li %}
+    <li><a class="nav-link" href="./about_colors.html">Teoria</a></li>
+    <li><a class="nav-link active" href="./about_site.html">Sobre</a></li>
+    <li><a class="nav-link" href="./contatos.html">Contatos</a></li>
+    <li><a class="nav-link" href="./comentarios.html">Comentários</a></li>
+{% endblock %}
+
+{% block main %}
+    <section id="estrutura-page">
+            <h2>Estrutura de Páginas</h2>
+
+            <p>Foram criadas 5 páginas ao todo:</p>
+            <ul>
+                <li>Home</li>
+                <li>Paleta</li>
+                <li>Teoria das Cores</li>
+                <li>Adicionar Paleta</li>
+                <li>Técnicas Usadas</li>
+            </ul>
+            <br>
+        </section>
+
+        </section>
+
+        <section id="TdC">
+
+            <h3>Página - Teoria das Cores</h3>
+            <p>
+                Nesta pagina encontra-se conteúdo sobre RGB e CMYK, identificando a diferença entre os dois padrões,
+                contém também informações sobre as cores frias, cores quentes e exemplos de paletas.
+                <br>
+                O Layout utilizado foi de 2 colunas usando flexbox, para separar os temas.
+                Media queries foram necessários, para quando o site for aberto em celular, as colunas ficarem empiladas.
+            <figure id="teo_lay">
+                <img src="../../static/website/images/layout_teoria.jpeg">
+            </figure>
+            </p>
+
+            <ul id="teo_lay_exp">
+                <li>Secção 1, header + nav da página.</li>
+
+                <li>Nas secções A1 e A2, divisão de 2 colunas no layout.<br>
+                    Foram utilizados 2 imagens com animação de transform.<br>
+                    Também foi necessário ajustar o texto com 2 media queries.</li>
+
+                <li>Nas secções B1 e B2, mantém-se a divisão de 2 colunas no layout.<br>
+                    Os botões se ajustam conforme o tamanho da tela para ficar empilados.<br>
+                    Na continuação do projeto, após clicar em um dos botões
+                    será alterado o plano de fundo e o texto sobre a cor.</li>
+
+                <li>Secção 2, section com introdução para galeria de fotos</li>
+
+                <li>Secção 3, galeria de fotos.<br>
+                    Utilizado um flexbox com 6 imagens, onde são responsivas ao tamanho da tela.<br>
+                    Foi utilizado uma animação de fadein, das imagens.</li>
+            </ul>
+
+        </section>
+
+        <section id="table_section">
+            <h3>Tabela com Características e Quantidades</h3>
+
+            <table id="table_tec">
+                <thead>
+                    <tr>
+                        <th>Características</th>
+                        <th>Descrição e Quantidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Layout</th>
+                        <td>Construido usando Flexbox e GRID para definir layouts.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Responsividade</th>
+                        <td>Media Queries, de variados tamanhos tentando englobar o máximo de aparelhos.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Seletores</th>
+                        <td>Foram usados seletores de id, classe, tipo, universal, pseudo-classe.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Etiquetas</th>
+                        <td>HTML5, header, nav, main, section, figure, footer, aside.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Animações</th>
+                        <td>Utilizado 2. Transform e opacidade na página de teoria das cores.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Páginas do website</th>
+                        <td>Um total de 17 páginas. Onde 5 são as páginas principais para navegação, e 12 para paletas
+                            individuais.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Imagens utilizadas</th>
+                        <td>Utilizado 8 imagens, todas localizadas na pagina de teoria das cores.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Links externos</th>
+                        <td>3 links utilizados, para galeria de exemplos de paletas e imagens RGB e CMYK.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="page-video">
+            <h2>Navegação da nossa página</h2>
+            <p>Neste vídeo, mostramos como é a navegação da nossa página.</p>
+            <iframe width="800" height="600" src="https://www.youtube.com/embed/apLd50IJnh0" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+{% endblock %}

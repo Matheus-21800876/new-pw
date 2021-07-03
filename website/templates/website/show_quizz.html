@@ -1,0 +1,17 @@
+{% extends 'website/base.html' %}
+
+{% block title %}
+    <title>Nota</title>
+{% endblock %}
+
+{% block li %}
+    <li><a class="nav-link" href="./">Home</a></li>
+    <li><a class="nav-link" href="./form.html">Criar</a></li>
+    <li><a class="nav-link active" href="./quizz.html">Quizz</a></li>
+{% endblock %}
+
+{% block main %}
+    <section id="grade">
+        <h3>A sua nota é: {{ nota }}</h3>
+    </section>
+{% endblock %}

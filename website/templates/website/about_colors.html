@@ -1,0 +1,136 @@
+{% extends 'website/base2.html' %}
+
+{% block link %}
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/website/images/teo_icon.ico">
+{% endblock %}
+
+{% block title %}
+    <title>Teoria das Cores</title>
+{% endblock %}
+
+{% block li %}
+    <li><a class="nav-link active" href="./about_colors.html">Teoria</a></li>
+    <li><a class="nav-link" href="./about_site.html">Sobre</a></li>
+    <li><a class="nav-link" href="./contatos.html">Contatos</a></li>
+    <li><a class="nav-link" href="./comentarios.html">Comentários</a></li>
+{% endblock %}
+
+{% block main %}
+    <section id="top_about_colors">
+            <h1>Importância das cores</h1>
+
+            <cite>"Color is a power which directly influences the soul" <br> by Wassily Kandinsky </cite>
+
+            <p><b>Cores estão presentes de diversas formas, e exercem uma grande influência em deciões.
+                    As cores utilizadas em um site, por exemplo, são grandes factores para transmitir de forma correta uma
+                    mensagem.</b></p>
+
+        </section>
+
+        <div class="layout_2colunas">
+            <section class="colunas" id="esquerda_rgb">
+                <h2>RGB</h2>
+
+                <figure class="left_rgbimage">
+                    <img src="../../static/website/images/RGB.png" alt="rgb_diagram">
+                    <figcaption>
+                        <a href="https://pt.wikipedia.org/wiki/RGB#/media/Ficheiro:Synthese+.svg"
+                            target="_blank">Diagrama RGB</a>
+                    </figcaption>
+                </figure>
+
+                <p id="text_rgb">
+
+                    <br><br><br>
+                    RGB é um modelo com as cores: Vermelho, Verde e Azul. A ideia principal
+                    desse modelo é reproduzir cores em computadores e televisões.
+
+                    <br><br>
+                    Esse modelo é aditivo, ou seja, a formação de outras cores se da por conta da junção das
+                    cores primárias.
+                </p>
+
+            </section>
+
+            <section class="colunas" id="direta_cmyk">
+                <h2>CMYK</h2>
+
+                <figure class="right_cmykimage">
+                    <img src="../../static/website/images/CMYK.png" alt="cmyk_diagram">
+                    <figcaption>
+                        <a href="https://pt.wikipedia.org/wiki/CMYK#/media/Ficheiro:SubtractiveColorMixing.png"
+                            target="_blank">Diagrama CMYK</a>
+                    </figcaption>
+                </figure>
+
+                <p id="text_cmyk">
+
+                    <br><br><br>
+                    CMYK é um modelo com os pigmentos: Ciano, Magenta, Amarelo e Preto.
+                    A ideia principal deste modelo é utilizado em impressoras e fotocopiadoras.
+
+                    <br><br>
+                    Esse modelo é subtrativo, ou seja, funciona com a absorção de luz, e
+                    é possível extrair cores.
+                </p>
+
+            </section>
+        </div>
+
+        <div class="layout_2colunas">
+            <section class="colunas" id="esquerda_frias">
+                <h2>Cores Frias</h2>
+
+                <p>As cores frias são associadas ao frio, serenidade e paz.</p>
+
+                <button class="cyan_button"></button>
+
+                <button class="blue_button"></button>
+
+                <button class="green_button"></button>
+
+                <p>A cor Ciano, uma das cores fundamentais do CMYK.
+                    <br>Emite calma e relaxamento.
+                </p>
+
+            </section>
+
+            <section class="colunas" id="direita_quentes">
+                <h2>Cores Quentes</h2>
+
+                <p>As cores quentes são associadas com calor, energia e brilho.</p>
+
+                <button class="yellow_button"></button>
+
+                <button class="orange_button"></button>
+
+                <button class="red_button"></button>
+
+                <p>A cor Amarela, um das cores fundamentais do RGB.
+                    <br>Representa luz e raios do sol.
+                </p>
+
+            </section>
+        </div>
+
+        <section id="bottom_about_palletes">
+            <h2>Paletas de cores</h2>
+
+            <p id="text_palletes"><br>Cor é uma parte fundamental de qualquer design. Saber quais cores combinam entre si
+                ajuda muito na hora de criar um visual, que seja bonito e fácil de navegar.
+                <br><br>
+                Segue alguns <a href="https://visme.co/blog/website-color-schemes/" target="_blank">exemplos</a>
+                de websites e suas paletas de cores:
+            </p>
+
+            <figure class="flex_6imgs">
+                <img src="../../static/website/images/pallete_1.jpg">
+                <img src="../../static/website/images/pallete_2.jpg">
+                <img src="../../static/website/images/pallete_3.jpg">
+                <img src="../../static/website/images/pallete_4.jpg">
+                <img src="../../static/website/images/pallete_5.jpg">
+                <img src="../../static/website/images/pallete_6.jpg">
+            </figure>
+
+        </section>
+{% endblock %}

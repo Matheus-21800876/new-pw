@@ -1,0 +1,161 @@
+{% extends 'website/base.html' %}
+
+{% block link %}
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/website/images/color_form.ico">
+{% endblock %}
+
+{% block title %}
+    <title>Criar</title>
+{% endblock %}
+
+{% block li %}
+    <li><a class="nav-link" href="./">Home</a></li>
+    <li><a class="nav-link active" href="./form.html">Criar</a></li>
+    <li><a class="nav-link" href="./quizz.html">Quizz</a></li>
+{% endblock %}
+
+{% block main %}
+    <section id="intro-createpalette">
+        <h2>Quer criar sua paleta ?</h2>
+        <p>Nesta secção é possível escolher cores para criar a sua própria paleta.</p>
+        <p>Pode utilizar seletores de cores ou, numeros RGB, ou código hexadecimal.</p>
+    </section>
+
+    <form id="palette-form" method="post" action="mailto:nome.apelido@gmail.com">
+        <!-- Seletores -->
+        <fieldset>
+            <legend>Adicionar por seletor</legend>
+
+            <label for="corespaleta"><b>Selecione as cores</b>:</label>
+            <input type="color" id="cor_1" name="primeira_cor" value="#994C00">
+            <input type="color" id="cor_2" name="segunda_cor" value="#FF8000">
+            <input type="color" id="cor_3" name="terceira_cor" value="#FF3333">
+            <input type="color" id="cor_4" name="quarta_cor" value="#FF0000">
+        </fieldset>
+
+        <!-- RGB -->
+        <fieldset class="rgb-fieldset">
+            <legend>RGB</legend>
+            <label for="rgbpaleta">Campos numéricos para RGB (Numeros de 0 a 255)</label>
+            <!-- Cor-01 -->
+            <fieldset class="color-fieldset">
+                <legend>Cor 01</legend>
+                <label>Vermelho:</label>
+                <input type="number" id="red_number1" name="vermelho1" min="0" max="255" placeholder="0">
+                <label>Verde:</label>
+                <input type="number" id="green_number1" name="verde1" min="0" max="255" placeholder="0">
+                <label>Azul:</label>
+                <input type="number" id="blue_number1" name="azul1" min="0" max="255" placeholder="0">
+            </fieldset>
+
+            <!-- Cor-02 -->
+            <fieldset class="color-fieldset">
+                <legend>Cor 02</legend>
+                <label>Vermelho:</label>
+                <input type="number" id="red_number2" name="vermelho2" min="0" max="255" placeholder="0">
+                <label>Verde:</label>
+                <input type="number" id="green_number2" name="verde2" min="0" max="255" placeholder="0">
+                <label>Azul:</label>
+                <input type="number" id="blue_number2" name="azul2" min="0" max="255" placeholder="0">
+            </fieldset>
+
+            <!-- Cor-03 -->
+            <fieldset class="color-fieldset">
+                <legend>Cor 03</legend>
+                <label>Vermelho:</label>
+                <input type="number" id="red_number3" name="vermelho3" min="0" max="255" placeholder="0">
+                <label>Verde:</label>
+                <input type="number" id="green_number3" name="verde3" min="0" max="255" placeholder="0">
+                <label>Azul:</label>
+                <input type="number" id="blue_number3" name="azul3" min="0" max="255" placeholder="0">
+            </fieldset>
+
+            <!-- Cor-04 -->
+            <fieldset class="color-fieldset">
+                <legend>Cor 04</legend>
+                <label>Vermelho:</label>
+                <input type="number" id="red_number4" name="vermelho4" min="0" max="255" placeholder="0">
+                <label>Verde:</label>
+                <input type="number" id="green_number4" name="verde4" min="0" max="255" placeholder="0">
+                <label>Azul:</label>
+                <input type="number" id="blue_number4" name="azul4" min="0" max="255" placeholder="0">
+            </fieldset>
+        </fieldset>
+
+        <!-- Hexadecimal -->
+        <fieldset>
+            <legend>Hexadecimal</legend>
+
+            <p class="field-info">Campos para código Hexadecimal (Deve ser composto de numeros e/ou letras)</p>
+
+            <fieldset class="color-fieldset">
+                <legend>Cor 01</legend>
+                <div class="box_hash">
+                    <input type="text" class="hex_code" nome="codigo_hex1" autofocus="autofocus" maxlength="6"
+                           pattern="[a-zA-Z0-9-]+">
+                    <span class="hashtag_fixo">#</span>
+                </div>
+            </fieldset>
+
+            <fieldset class="color-fieldset">
+                <legend>Cor 02</legend>
+                <div class="box_hash">
+                    <input type="text" class="hex_code" nome="codigo_hex2" autofocus="autofocus" maxlength="6"
+                           pattern="[a-zA-Z0-9-]+">
+                    <span class="hashtag_fixo">#</span>
+                </div>
+            </fieldset>
+
+            <fieldset class="color-fieldset">
+                <legend>Cor 03</legend>
+                <div class="box_hash">
+                    <input type="text" class="hex_code" nome="codigo_hex3" autofocus="autofocus" maxlength="6"
+                           pattern="[a-zA-Z0-9-]+">
+                    <span class="hashtag_fixo">#</span>
+                </div>
+            </fieldset>
+
+            <fieldset class="color-fieldset">
+                <legend>Cor 04</legend>
+                <div class="box_hash">
+                    <input type="text" class="hex_code" nome="codigo_hex4" autofocus="autofocus" maxlength="6"
+                           pattern="[a-zA-Z0-9-]+">
+                    <span class="hashtag_fixo">#</span>
+                </div>
+            </fieldset>
+        </fieldset>
+
+        <!-- Informações da Paleta -->
+        <fieldset>
+            <legend>Informações da Paleta</legend>
+            <div class="info-input-group">
+                <label for="quente"><input type="radio" id="quente" name="aspect" value="quente">Quentes</label>
+                <label for="fria"><input type="radio" id="fria" name="aspect" value="fria">Frias</label>
+                <label for="ambas"><input type="radio" id="ambas" name="aspect" value="ambas">Ambas</label>
+            </div>
+            <label for="theme" class="form-block info-input-group">Selecione o tema da Paleta:
+                <select id="p_theme" class="form-block" name="theme">
+                    <option value="darkmode">Darkmode</option>
+                    <option value="lightmode">Lightmode</option>
+                    <option value="flatcolors">Flat Colors</option>
+                    <option value="springcolors">Spring Colors</option>
+                    <option value="summercolors">Summer Colors</option>
+                    <option value="fallcolors">Fall Colors</option>
+                    <option value="wintercolors">Winter Colors</option>
+                </select>
+            </label>
+
+            <label for="pname" class="form-block info-input-group">Nome da Paleta:
+                <input type="text" id="p_name" class="form-block" name="nome_paleta" required>
+            </label>
+
+
+            <label for="pAutor" class="form-block info-input-group">Nome do Autor:
+                <input type="text" id="pAutor" class="form-block" name="nome_autor" required>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+
+    </form>
+{% endblock %}

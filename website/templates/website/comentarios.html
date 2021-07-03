@@ -1,0 +1,30 @@
+{% extends 'website/base2.html' %}
+
+{% block link %}
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/website/images/teo_icon.ico">
+{% endblock %}
+
+{% block title %}
+    <title>Contatos</title>
+{% endblock %}
+
+{% block li %}
+    <li><a class="nav-link" href="./about_colors.html">Teoria</a></li>
+    <li><a class="nav-link" href="./about_site.html">Sobre</a></li>
+    <li><a class="nav-link" href="./contatos.html">Contatos</a></li>
+    <li><a class="nav-link active" href="./comentarios.html">Comentários</a></li>
+{% endblock %}
+
+{% block main %}
+    <section id="intro-quizz">
+        <h2>Comentários</h2>
+
+        <form id="comentario-form" action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit" value="Adicionar" class="btn btn-success" >
+        </form>
+    </section>
+
+{% endblock %}

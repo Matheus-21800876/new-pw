@@ -1,0 +1,19 @@
+{% extends 'website/base.html' %}
+
+{% block link %}
+    <link rel="shortcut icon" type="image/x-icon" href="../../../static/website/images/palette_icon.ico">
+{% endblock %}
+
+{% block title %}
+    <title>Single Page</title>
+{% endblock %}
+
+{% block li %}
+    <li><a class="nav-link active" href="../">Home</a></li>
+    <li><a class="nav-link" href="../form.html">Criar</a></li>
+    <li><a class="nav-link" href="../quizz.html">Quizz</a></li>
+{% endblock %}
+
+{% block main %}
+    <div id="content"></div>
+{% endblock %}
