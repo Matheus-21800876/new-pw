@@ -727,10 +727,6 @@ td, th {
     padding: 8px;
 }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
 #table_section > h3{
     margin-bottom: 15px;
     text-align: center;
