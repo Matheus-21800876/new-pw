@@ -91,8 +91,6 @@ function paginaPaleta(name, autor, color01, color02, color03, color04) {
                             <rect fill="${color01}" width="200px" height="200px"></rect>
                         </svg>
                         <p>${color01}</p>
-                        <p>rgb(238,235,221)</p>
-                        <p>hsl(49.4,33.3%,90%)</p>
                     </article>
 
                     <article class="color-item">
@@ -100,8 +98,6 @@ function paginaPaleta(name, autor, color01, color02, color03, color04) {
                             <rect fill="${color02}" width="200px" height="200px"></rect>
                         </svg>
                         <p>${color02}</p>
-                        <p>rgb(129,0,0)</p>
-                        <p>hsl(0,100%,25.3%)</p>
                     </article>
 
                     <article class="color-item">
@@ -109,8 +105,6 @@ function paginaPaleta(name, autor, color01, color02, color03, color04) {
                             <rect fill="${color03}" width="200px" height="200px"></rect>
                         </svg>
                         <p>${color03}</p>
-                        <p>rgb(99,0,0)</p>
-                        <p>hsl(0,100%,19.4%)</p>
                     </article>
 
                     <article class="color-item">
@@ -118,8 +112,6 @@ function paginaPaleta(name, autor, color01, color02, color03, color04) {
                             <rect fill="${color04}" width="200px" height="200px"></rect>
                         </svg>
                         <p>${color04}</p>
-                        <p>rgb(27,23,23)</p>
-                        <p>hsl(0,8%,9.8%)</p>
                     </article>
                 </section>
             </section>
